@@ -45,18 +45,18 @@ public class Questions {
 			break;
 		}
 	}
-		if (iNum < eNum)
+		if (iNum == eNum - 1)
 		{
-			if (cNum < iNum && cNum != -1)
+			if (cNum == iNum - 1 && cNum != -1)
 			{
 				return false;
 			}
 			return true;
 		}
 		
-		if (eNum < iNum)
+		if (eNum == iNum - 1)
 		{
-			if (cNum < eNum && cNum != -1)
+			if (cNum == eNum - 1 && cNum != -1)
 			{
 				return true;
 			}
