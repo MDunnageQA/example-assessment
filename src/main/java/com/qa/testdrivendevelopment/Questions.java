@@ -40,7 +40,7 @@ public class Questions {
 			eNum = j;
 		}
 		
-		if (iNum == eNum - 1)
+		if (iNum == eNum - 1 && iNum != -1)
 		{
 			if (cNum == iNum - 1 && cNum != -1)
 			{
@@ -49,7 +49,7 @@ public class Questions {
 			return true;
 		}
 		
-		if (eNum == iNum - 1)
+		if (eNum == iNum - 1 && eNum != -1)
 		{
 			if (cNum == eNum - 1 && cNum != -1)
 			{
