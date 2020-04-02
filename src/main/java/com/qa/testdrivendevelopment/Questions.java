@@ -18,9 +18,9 @@ public class Questions {
 		char c = 'c';
 		char i = 'i';
 		char e = 'e';
-		int cNum = 0;
-		int iNum = 0;
-		int eNum = 0;
+		int cNum = -1;
+		int iNum = -1;
+		int eNum = -1;
 		int j = 0;
 		
 	while (j < input.length())
@@ -40,14 +40,14 @@ public class Questions {
 			eNum = j;
 		}
 		
-		if (iNum != 0 && eNum != 0)
+		if (iNum != -1 && eNum != -1)
 		{
 			break;
 		}
 	}
 		if (iNum < eNum)
 		{
-			if (cNum < iNum)
+			if (cNum < iNum && cNum != -1)
 			{
 				return false;
 			}
@@ -56,7 +56,7 @@ public class Questions {
 		
 		if (eNum < iNum)
 		{
-			if (cNum < eNum)
+			if (cNum < eNum && cNum != -1)
 			{
 				return true;
 			}
