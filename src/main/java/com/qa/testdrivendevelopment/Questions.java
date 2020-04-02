@@ -40,11 +40,6 @@ public class Questions {
 			eNum = j;
 		}
 		
-		if (iNum != -1 && eNum != -1)
-		{
-			break;
-		}
-	}
 		if (iNum == eNum - 1)
 		{
 			if (cNum == iNum - 1 && cNum != -1)
@@ -62,6 +57,7 @@ public class Questions {
 			}
 			return false;
 		}
+	}
 	
 	return false;
 	}
